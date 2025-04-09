@@ -10,8 +10,9 @@
   <meta name="author" content="Al Nashra Building Contracting" />
   <meta property="og:title" content="Al Nashra Building Contracting - Construction, Maintenance & Building Repair in UAE" />
   <meta property="og:description" content="Top-tier construction, maintenance, and building repair services in Umm Al Quwain, Ajman, and UAE by Al Nashra Building Contracting." />
+  <!-- Using a Lottie animation URL as a preview image -->
   <meta property="og:image" content="https://assets3.lottiefiles.com/packages/lf20_jtbfg2nb.json" />
-  <meta property="og:url" content="https://www.alnashrabuilding.com" />
+  <meta property="og:url" content="https://your-username.github.io/your-repo-name/" />
   <meta property="og:type" content="website" />
   <title>Al Nashra Building Contracting | Construction, Maintenance & Building Repair in UAE</title>
   
@@ -19,37 +20,39 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Upgrade typography for an industry-grade look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Animate.css for entrance animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- LottieFiles Player for vector animations -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   
   <style>
     /* Base Styles */
     body {
       background: #FFFFFF;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      color: #1A202C;
+      color: #1F2937;
       line-height: 1.7;
       font-size: 1.1rem;
-      /* Adding top padding so fixed navbar doesn't cover content */
-      padding-top: 80px;
+      padding-top: 80px; /* to account for fixed navbar */
+      background-image: url('https://www.transparenttextures.com/patterns/brick-wall.png');
+      /* A subtle brick texture background for an industrial look */
     }
     a {
       text-decoration: none;
       transition: color 0.3s ease;
-      color: #4A90E2;
+      color: #3E497A;
     }
     a:hover {
-      color: #9013FE;
+      color: #F9A826;
     }
     /* Gradient Text for Headings */
     .gradient-heading {
-      background: linear-gradient(45deg, #4A90E2, #9013FE);
+      background: linear-gradient(45deg, #3E497A, #F9A826);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 700;
@@ -78,21 +81,22 @@
       padding: 0.5rem 1rem;
       border-radius: 25px;
       transition: background-color 0.3s ease;
-      color: #4A90E2;
+      color: #3E497A;
     }
     .nav-link:hover {
-      background: rgba(74, 144, 226, 0.1);
-      color: #4A90E2;
+      background: rgba(62,73,122, 0.1);
+      color: #3E497A;
     }
     /* Hero Section */
     .jumbotron {
-      background: #FFFFFF;
-      color: #1A202C;
+      background: rgba(255, 255, 255, 0.95);
+      color: #1F2937;
       padding: 6rem 2rem;
       text-align: center;
       position: relative;
       overflow: hidden;
       border-bottom: 1px solid #EDF2F7;
+      border-radius: 10px;
     }
     .jumbotron h1 {
       font-size: 3.5rem;
@@ -112,7 +116,7 @@
       border-radius: 50px;
       font-size: 1.2rem;
       font-weight: 600;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .btn-primary:hover {
       transform: scale(1.05);
@@ -122,20 +126,20 @@
     .experience-counter {
       font-size: 2.8rem;
       font-weight: 700;
-      color: #4A90E2;
+      color: #3E497A;
       margin-top: 1rem;
       text-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
     /* Section Styles */
     section {
       padding: 5rem 2rem;
-      background: #FFFFFF;
+      background: rgba(255,255,255,0.95);
       border-radius: 20px;
       margin: 2rem auto;
       max-width: 1200px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.03);
     }
-    /* Card Styles for Services, Testimonials, Blog */
+    /* Card Styles */
     .card {
       border: none;
       border-radius: 15px;
@@ -148,17 +152,12 @@
       transform: translateY(-15px);
       box-shadow: 0 12px 30px rgba(0,0,0,0.1);
     }
-    /* Use Lottie animations instead of traditional images */
     .card lottie-player {
       width: 100%;
       height: 250px;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       object-fit: cover;
-    }
-    /* Revised Our Services Section with Four Cards */
-    .services-row .col-md-3 {
-      margin-bottom: 2rem;
     }
     /* Floating WhatsApp Button */
     .floating-btn {
@@ -175,16 +174,16 @@
       padding: 15px 18px;
       font-size: 1.8rem;
       color: #FFFFFF;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .floating-btn .btn:hover {
       transform: scale(1.1);
       box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     }
-    /* Footer */
+    /* Footer Styles */
     footer {
       background: #FFFFFF;
-      color: #1A202C;
+      color: #1F2937;
       padding: 4rem 2rem;
       border-top: 1px solid #EDF2F7;
       text-align: center;
@@ -195,7 +194,7 @@
       border-radius: 50%;
       overflow: hidden;
       margin: 0 auto 1rem;
-      border: 4px solid #4A90E2;
+      border: 4px solid #3E497A;
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     .footer-map iframe {
@@ -210,6 +209,7 @@
   <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
     <div class="container">
       <a class="navbar-brand" href="#">
+        <!-- Animated logo from LottieFiles -->
         <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jtbfg2nb.json" background="transparent" speed="1" style="height:50px; width:50px;" loop autoplay></lottie-player>
         <span class="gradient-heading">Al Nashra Building Contracting</span>
       </a>
@@ -223,7 +223,7 @@
           <li class="nav-item"><a class="nav-link" href="#our-services">Services / خدماتنا</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects / مشاريعنا</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials / آراء العملاء</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog & News / الأخبار</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Expertise / خبراتنا</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact / تواصل معنا</a></li>
         </ul>
       </div>
@@ -233,9 +233,16 @@
   <!-- Hero Section with Animated Vector -->
   <section class="jumbotron animate__animated animate__fadeInUp">
     <div class="container">
-      <h1 class="gradient-heading">Excellence in Construction & Maintenance for 20+ Years<br>التميز في البناء والصيانة لأكثر من 20 عامًا</h1>
-      <p>Top construction, maintenance, and building repair services in Umm Al Quwain, Ajman, and across the UAE.<br>خدمات بناء وصيانة وإصلاح المباني الرائدة في أم القيوين، عجمان، وجميع أنحاء الإمارات.</p>
-      <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_HXjjwkuIBf.json" background="transparent" speed="1" style="width:300px; height:300px; margin:0 auto;" loop autoplay></lottie-player>
+      <h1 class="gradient-heading">
+        Excellence in Construction & Maintenance for 20+ Years<br>
+        التميز في البناء والصيانة لأكثر من 20 عامًا
+      </h1>
+      <p>
+        Top construction, maintenance, and building repair services in Umm Al Quwain, Ajman, and across the UAE.<br>
+        خدمات بناء وصيانة وإصلاح المباني الرائدة في أم القيوين، عجمان، وجميع أنحاء الإمارات.
+      </p>
+      <!-- Hero animation -->
+      <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_HXjjwkuIBf.json" background="transparent" speed="1" style="width:300px; height:300px; margin: 0 auto;" loop autoplay></lottie-player>
       <div id="counter" class="experience-counter">0 Years of Experience</div>
       <a href="#contact" class="btn btn-primary mt-4">Get a Quote / احصل على عرض سعر</a>
     </div>
@@ -246,11 +253,16 @@
     <h2 class="text-center gradient-heading mb-5">About Us / من نحن</h2>
     <div class="row align-items-center">
       <div class="col-md-6">
+        <!-- About Us vector animation -->
         <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_XX1ZcF.json" background="transparent" speed="1" style="width:100%; height:300px;" loop autoplay></lottie-player>
       </div>
       <div class="col-md-6">
-        <p>With over 20 years of expertise, Al Nashra Building Contracting offers top-tier construction, maintenance, and building repair services across Umm Al Quwain, Ajman, and UAE. Our skilled team delivers precision and quality in every project.</p>
-        <p>مع أكثر من 20 عامًا من الخبرة، تقدم شركة النشرة للبناء والتعهد خدمات بناء وصيانة وإصلاح مباني عالية الجودة في أم القيوين، عجمان، والإمارات. فريقنا الماهر يضمن الدقة والجودة في كل مشروع.</p>
+        <p>
+          With over 20 years of expertise, Al Nashra Building Contracting offers top-tier construction, maintenance, and building repair services across Umm Al Quwain, Ajman, and UAE. Our skilled team delivers precision and quality in every project.
+        </p>
+        <p>
+          مع أكثر من 20 عامًا من الخبرة، تقدم شركة النشرة للبناء والتعهد خدمات بناء وصيانة وإصلاح مباني عالية الجودة في أم القيوين، عجمان، والإمارات. فريقنا الماهر يضمن الدقة والجودة في كل مشروع.
+        </p>
       </div>
     </div>
   </section>
@@ -259,47 +271,43 @@
   <section id="our-services" class="container animate__animated animate__fadeInUp">
     <h2 class="text-center gradient-heading mb-5">Our Services / خدماتنا</h2>
     <div class="row services-row">
-      <!-- Service Card: Construction (with animation from basement to highrise) -->
+      <!-- Construction Card: Building from Basement to Highrise -->
       <div class="col-md-3">
         <div class="card text-center">
           <div class="card-body">
-            <!-- Sample Lottie animation URL for rising building; replace with your asset -->
             <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_building_growth.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
             <h3 class="card-title mt-3 gradient-heading">Construction / البناء</h3>
-            <p class="card-text">From foundation to highrise, our construction solutions stand tall.</p>
+            <p class="card-text">From foundation to highrise – we build structures that stand tall.</p>
           </div>
         </div>
       </div>
-      <!-- Service Card: Maintenance -->
+      <!-- Maintenance Card -->
       <div class="col-md-3">
         <div class="card text-center">
           <div class="card-body">
-            <!-- Sample Lottie animation for maintenance -->
             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_vfdyB0.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
             <h3 class="card-title mt-3 gradient-heading">Maintenance / الصيانة</h3>
-            <p class="card-text">Ensure longevity with our reliable maintenance services.</p>
+            <p class="card-text">Regular upkeep to ensure longevity and peak performance.</p>
           </div>
         </div>
       </div>
-      <!-- Service Card: Building Repair -->
+      <!-- Building Repair Card -->
       <div class="col-md-3">
         <div class="card text-center">
           <div class="card-body">
-            <!-- Sample Lottie animation for repair -->
             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_kq7zrnmb.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
             <h3 class="card-title mt-3 gradient-heading">Building Repair / إصلاح المباني</h3>
-            <p class="card-text">Revitalize structures with our expert repair techniques.</p>
+            <p class="card-text">Restore and enhance structures with our expert repairs.</p>
           </div>
         </div>
       </div>
-      <!-- Service Card: Affordable Pricing (money & calculator animation) -->
+      <!-- Affordable Pricing Card: Money and Calculator -->
       <div class="col-md-3">
         <div class="card text-center">
           <div class="card-body">
-            <!-- Sample Lottie animation for affordability (money, calculator) -->
             <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_moneycalc.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
             <h3 class="card-title mt-3 gradient-heading">Affordable Pricing / أسعار مناسبة</h3>
-            <p class="card-text">Competitive rates that add value to your investments.</p>
+            <p class="card-text">Competitive rates that maximize your investment.</p>
           </div>
         </div>
       </div>
@@ -316,19 +324,21 @@
         <li data-target="#projectCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <!-- Each carousel-item uses Lottie vector animations -->
+        <!-- Carousel Item 1 -->
         <div class="carousel-item active">
           <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width:100%; height:550px;" loop autoplay></lottie-player>
           <div class="carousel-caption">
             <p>“Exceptional quality and timely delivery.” — Ahmed Al Mansouri</p>
           </div>
         </div>
+        <!-- Carousel Item 2 -->
         <div class="carousel-item">
           <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_vfdyB0.json" background="transparent" speed="1" style="width:100%; height:550px;" loop autoplay></lottie-player>
           <div class="carousel-caption">
             <p>“Professional and efficient service.” — Fatima Al Qasimi</p>
           </div>
         </div>
+        <!-- Carousel Item 3 -->
         <div class="carousel-item">
           <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_kq7zrnmb.json" background="transparent" speed="1" style="width:100%; height:550px;" loop autoplay></lottie-player>
           <div class="carousel-caption">
@@ -388,30 +398,54 @@
     </div>
   </section>
 
-  <!-- Blog/News Section with Regional Tips using Vectors -->
-  <section id="blog" class="container animate__animated animate__fadeInUp">
-    <h2 class="text-center gradient-heading mb-5">Blog & News / الأخبار والمدونة</h2>
+  <!-- Our Expertise Section (Replaces Blog & News) -->
+  <section id="services" class="container animate__animated animate__fadeInUp">
+    <h2 class="text-center gradient-heading mb-5">Our Expertise / خبراتنا</h2>
     <div class="row">
-      <!-- Maintenance Tips Card -->
-      <div class="col-md-6">
-        <div class="card">
-          <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
+      <!-- Structural Reinforcement -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0 h-100">
+          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_structural.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
           <div class="card-body">
-            <h3 class="card-title gradient-heading">Maintenance Tips 2025 / نصائح الصيانة 2025</h3>
+            <h3 class="card-title gradient-heading">Structural Reinforcement</h3>
             <p class="card-text">
-              Discover essential maintenance tips tailored for Umm Al Quwain buildings. Learn how our local climate and construction techniques affect upkeep with advice on moisture control, corrosion prevention, and routine inspections.
+              Specializing in concrete strengthening, slab correction, and beam-column retrofitting, we deliver frameworks that withstand nature’s forces.
             </p>
           </div>
         </div>
       </div>
-      <!-- Repair Spotlight Card -->
-      <div class="col-md-6">
-        <div class="card">
-          <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_kq7zrnmb.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
+      <!-- Painting & Finishing -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0 h-100">
+          <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_paintfinish.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
           <div class="card-body">
-            <h3 class="card-title gradient-heading">Repair Spotlight / تسليط الضوء على الإصلاح</h3>
+            <h3 class="card-title gradient-heading">Painting & Finishing</h3>
             <p class="card-text">
-              Get expert repair tips suited for Umm Al Quwain’s unique challenges. Advice covers tackling salt corrosion, wind exposure, and moisture issues to maintain a robust, modern building.
+              From protective coatings to decorative finishes, our specialized processes ensure durability and visual appeal for every project.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Restoration & Renovation -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0 h-100">
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_restoration.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
+          <div class="card-body">
+            <h3 class="card-title gradient-heading">Restoration & Renovation</h3>
+            <p class="card-text">
+              Reviving and modernizing aging structures with precise restoration techniques and innovative renovations that respect the original design.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Civil Maintenance & Fit-outs -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0 h-100">
+          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_civilmaintenance.json" background="transparent" speed="1" style="width:100%; height:250px;" loop autoplay></lottie-player>
+          <div class="card-body">
+            <h3 class="card-title gradient-heading">Civil Maintenance & Fit-outs</h3>
+            <p class="card-text">
+              Comprehensive facility management from routine civil maintenance to full-scale interior fit-outs, ensuring optimal performance and comfort.
             </p>
           </div>
         </div>
@@ -458,13 +492,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Experience Counter Animation -->
+  
+  <!-- Experience Counter Animation Script -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const counterEl = document.getElementById("counter");
       if (counterEl) {
         const currentYear = new Date().getFullYear();
-        const experienceYears = currentYear - 2005; // Adjust start year if needed
+        const experienceYears = currentYear - 2005; // Update this value as needed.
         let count = 0;
         const interval = setInterval(() => {
           if (count < experienceYears) {
